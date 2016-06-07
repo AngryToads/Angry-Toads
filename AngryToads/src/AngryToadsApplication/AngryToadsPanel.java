@@ -35,7 +35,7 @@ class AngryToadsPanel extends JPanel {
 
     private boolean dragflag = false, insidePause = false, insideRestart = false, insideMenu = false, insideResume = false;
     private boolean flag=false;
-    private boolean isPause = false;
+    public boolean isPause = false;
     private int lor,mark;
     private float b1s = 1f, b2s = 1f, b3s = 1f, b4s = 1f;
     private int menuX, menuY, menuW, menuH, resumeX, resumeY, resumeW, resumeH;
@@ -221,7 +221,7 @@ class AngryToadsPanel extends JPanel {
             String info;
 
             if (isPause) {
-                info = "游戏暂停";
+                info = "长者休息";
             } else {
                 if (hasWin) {
                     info = "游戏胜利";
@@ -232,7 +232,7 @@ class AngryToadsPanel extends JPanel {
 
             if (insideResume) {
                 if (isPause) {
-                    info = "继续游戏";
+                    info = "继续打蛤";
                 } else if (gameOver) {
                     if (hasWin) {
                         info = "下一关卡";
