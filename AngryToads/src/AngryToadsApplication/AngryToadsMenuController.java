@@ -9,10 +9,9 @@ import java.util.logging.Logger;
 public class AngryToadsMenuController extends MouseMotionAdapter implements Runnable, MouseListener {
 	private final int PREF_WIDTH;
 	private final int PREF_HEIGHT;
-	private final AngryToadsMenu myMenu;
+	public final AngryToadsMenu myMenu;
 	Thread menuThread;
-	boolean stop = true;
-	int k = 0;
+	public boolean stop = true;
 
 	AngryToadsMenuController(AngryToadsMenu menu) {
 		PREF_HEIGHT = menu.getHeight();
