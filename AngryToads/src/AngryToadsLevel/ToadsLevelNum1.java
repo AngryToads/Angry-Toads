@@ -29,12 +29,12 @@ public class ToadsLevelNum1 extends AngryToadsArea {
 		this.toadList.add(new AngryToadsEnemy().createEnemy(this.sworld, 0, pos));
 		this.obList.add(
 				new AngryToadsObstacles().createObstacles(this.sworld, 1, pos.set(pos.x + 0.3f, pos.y), 0.2f, 0.2f, 0));
-		pos.set(20f, 3f);
+		pos.set(20f, 6f);
 		this.obList.add(new AngryToadsObstacles().createObstacles(this.sworld, 1, pos, 3f, 4f, 0));
-		this.obList.add(new AngryToadsObstacles().createObstacles(this.sworld, 1, pos.set(pos.x, pos.y + 4f), 1, 1, 0));
-		pos.set(34f, 2.5f);
+		this.obList.add(new AngryToadsObstacles().createObstacles(this.sworld, 1, pos.set(pos.x, pos.y + 4.5f), 1, 1, 0));
+		pos.set(34f, 3.0f);
 		this.obList.add(new AngryToadsObstacles().createObstacles(this.sworld, 2, pos, 2f, 1f, 0));
-		this.obList.add(new AngryToadsObstacles().createObstacles(this.sworld, 2, pos.set(pos.x, pos.y + 1), 1, 1, 0));
+		this.obList.add(new AngryToadsObstacles().createObstacles(this.sworld, 2, pos.set(pos.x, pos.y + 2.0f), 1, 1, 0));
 		pos.set(34f - 2.5f, 2.5f);
 		this.toadList.add(new AngryToadsEnemy().createEnemy(this.sworld, 0, pos));
 		pos.set(38f, 3.6f);

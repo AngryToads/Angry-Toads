@@ -35,7 +35,7 @@ class AngryToadsPanel extends JPanel {
 
     private boolean dragflag = false, insidePause = false, insideRestart = false, insideMenu = false, insideResume = false;
     private boolean flag=false;
-    private boolean isPause = false;
+    public boolean isPause = false;
     private int lor,mark;
     private float b1s = 1f, b2s = 1f, b3s = 1f, b4s = 1f;
     private int menuX, menuY, menuW, menuH, resumeX, resumeY, resumeW, resumeH;

@@ -16,7 +16,7 @@ public class AngryToadsViewportTransform {
     Vec2 offset=new Vec2();
     public float bgscale=1f;
     int btx=0,bty=0;
-    int initCamStatus = 0;/*0:Initial val; 1:Finished camshift to the enemy; 
+    public int initCamStatus = 0;/*0:Initial val; 1:Finished camshift to the enemy;
     2:Finished camshift to the sling; 3: Finished cam reset*/
     float initScale;
     float initOffsetx;
@@ -69,7 +69,7 @@ public class AngryToadsViewportTransform {
             offset.y += 2;
             bgscale += 0.01f;
         }
-        if (scale > 15 && scaletimes < 0) {
+        if (scale > 17.5 && scaletimes < 0) {
             scale -= 2;
             offset.y -= 2;
             bgscale -= 0.01f;
@@ -103,7 +103,7 @@ public class AngryToadsViewportTransform {
             offset.y += 0.1f;
             bgscale += 0.001f;
         }
-        if (scale > 15 && scaletimes < 0) 
+        if (scale > 17.5 && scaletimes < 0)
         {
             scale -= 0.1f;
             offset.y -= 0.1f;

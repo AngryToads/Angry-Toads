@@ -95,6 +95,9 @@ public class AngryToadsController extends MouseAdapter implements Runnable, Mous
     public void backToMenu () {
         gamethread.stop();
         restart(false);
+        m_view.gameOver = false;
+        m_view.isPause = false;
+        drawer.vpt = new AngryToadsViewportTransform(m_view);
     }
 
 
