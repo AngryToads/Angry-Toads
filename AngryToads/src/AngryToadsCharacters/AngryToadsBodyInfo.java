@@ -63,8 +63,8 @@ public class AngryToadsBodyInfo {
 	float iceThreshold2 = 4f;
 	float stoneThreshold = 14f;
 	float stoneThreshold2 = 7f;
-	float toadThreshold = 1.5f;
-	float toadThreshold2 = 1f;
+	float toadThreshold = 0.7f;
+	float toadThreshold2 = 0.4f;
 
 	AngryToadsBodyInfo(String image, float hp, String name) {
 		appearance = new ImageIcon(image);
