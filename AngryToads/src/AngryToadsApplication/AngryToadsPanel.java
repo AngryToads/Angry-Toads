@@ -221,7 +221,7 @@ class AngryToadsPanel extends JPanel {
             String info;
 
             if (isPause) {
-                info = "游戏暂停";
+                info = "长者休息";
             } else {
                 if (hasWin) {
                     info = "游戏胜利";
@@ -232,7 +232,7 @@ class AngryToadsPanel extends JPanel {
 
             if (insideResume) {
                 if (isPause) {
-                    info = "继续游戏";
+                    info = "继续打蛤";
                 } else if (gameOver) {
                     if (hasWin) {
                         info = "下一关卡";
