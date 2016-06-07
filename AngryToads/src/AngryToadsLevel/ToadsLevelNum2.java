@@ -21,7 +21,7 @@ public class ToadsLevelNum2 extends AngryToadsArea{
 		this.setLevelNum(2);
 		
 		Vec2 pos = new Vec2();
-		for (int i = 0; i < 3; i++) {
+		for (int i = 0; i < 5; i++) {
 			pos.set(2 + i / 2, 3f);
 			this.birdList.add(nModel.createBody(this.sworld, 1, pos));
 		}
