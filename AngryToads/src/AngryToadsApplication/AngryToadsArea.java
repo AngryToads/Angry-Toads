@@ -134,7 +134,7 @@ public abstract class AngryToadsArea {
 		}
 		int stdDuration = 3;
 		if(this.preGameOver){
-			stdDuration = 5;
+			stdDuration = 4;
 		}
 
 		if (duration > stdDuration && attach == null) { // 射出时间大于3秒并且当前弹弓为空，将下一个bird架上弹弓
