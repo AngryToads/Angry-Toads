@@ -55,8 +55,8 @@ public class AngryToadsController extends MouseAdapter implements Runnable, Mous
                         m_stage.track.add(new Vec2(nowbird.getPosition()));
                     }
                     if(m_stage.gameOver){
-                    	stop = true;
                     	this.gameEnd(false);
+//                    	stop = true;
                     }
                     drawer.drawStage(m_stage.nowbullet,m_stage.track);
                     Thread.sleep(5);
