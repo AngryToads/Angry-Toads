@@ -55,6 +55,9 @@ public class ToadsLevelNum2 extends AngryToadsArea{
 		this.toadList.add(new AngryToadsEnemy().createEnemy(this.sworld, 0, pos.set(pos1.x+0.5f,pos1.y+1f)));
 		//this.toadList.add(new AngryToadsEnemy().createEnemy(this.sworld, 0, pos.set(pos1.x+2.5f,pos1.y+1f)));
 		this.obList.add(new AngryToadsObstacles().createObstacles(this.sworld, 1, pos.set(pos1.x+4f,pos1.y+1f),0.3f, 0.3f, 0));
+		pos.set(45f, 2f);
+		this.obList.add(new AngryToadsObstacles().createObstacles(this.sworld, 3, pos, 2f, 5f, 0));
+		
 		toadBullets = 0;
 		// set the position of sling.
 		pos.set(5f, 7f);
