@@ -21,7 +21,7 @@ public class AngryToadsBodyInfo {
 	float hafheight = 0;
 	boolean isDamaged = false;
 	boolean isDamaged2 = false;
-
+	ImageIcon translucent=new ImageIcon("src/AngryToadsImagePack/translucent.png");
 	// List of images of wood/stone/ice
 	@SuppressWarnings("serial")
 	ArrayList<ImageIcon> wood = new ArrayList<ImageIcon>() {
