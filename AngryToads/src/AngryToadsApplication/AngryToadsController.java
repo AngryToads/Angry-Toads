@@ -56,12 +56,12 @@ public class AngryToadsController extends MouseAdapter implements Runnable, Mous
                     }
                     if(m_stage.gameOver){
                     	this.gameEnd(false);
-//                    	stop = true;
                     }
                     drawer.drawStage(m_stage.nowbullet,m_stage.track);
                     Thread.sleep(5);
                     //drawer.drawStage(m_stage.nowbullet,m_stage.track);
                 }
+                drawer.drawStage(m_stage.nowbullet,m_stage.track);
                 Thread.sleep(12);
             } catch (InterruptedException ex) {
                 Logger.getLogger(AngryToadsController.class.getName()).log(Level.SEVERE, null, ex);
@@ -93,7 +93,8 @@ public class AngryToadsController extends MouseAdapter implements Runnable, Mous
     }
 
     public void backToMenu () {
-        // TODO: 返回主菜单
+        gamethread.stop();
+        restart(false);
     }
 
 

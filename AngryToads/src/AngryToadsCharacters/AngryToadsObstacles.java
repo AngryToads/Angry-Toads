@@ -78,7 +78,12 @@ public class AngryToadsObstacles extends AngryToadsCharacter {
 		 * can't be destroyed.health is Float.MAX_VALUE.
 		 */
 			case 3:
-			break;
+				this.getCharacterinfo().setName("MAX");
+				this.getCharacterinfo().setAppearance(this.getCharacterinfo().translucent.getImage());
+				this.setCharacter(hWidth, hHeight, angle, 10f, 0.001f, 0.1f);
+				obs.m_userData=this.getCharacterinfo();
+				obs.createFixture(this.characterfixdef);
+				break;
 		}
 		this.getCharacterfixdef().userData = this.getCharacterinfo();
 		return obs;

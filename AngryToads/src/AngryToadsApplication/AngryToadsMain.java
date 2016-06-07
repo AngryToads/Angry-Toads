@@ -13,7 +13,7 @@ public class AngryToadsMain {
     public static void main(String[] args) throws InterruptedException, IOException{// NoPlayerException, CannotRealizeException {
 
 
-        AngryToadsArea ts=new ToadsLevel(0).createLevel();
+        AngryToadsArea ts=new ToadsLevel(1).createLevel();
 
         AngryToadsMenu menu=new AngryToadsMenu();
         AngryToadsPanel game=new AngryToadsPanel();
