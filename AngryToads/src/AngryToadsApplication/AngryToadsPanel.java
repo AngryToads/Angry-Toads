@@ -237,7 +237,7 @@ class AngryToadsPanel extends JPanel {
                     if (hasWin) {
                         info = "下一关卡";
                     } else {
-                        info = "重玩此关";
+                        info = "再续一秒";
                     }
                 }
             }
