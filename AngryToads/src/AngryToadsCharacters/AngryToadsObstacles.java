@@ -39,10 +39,10 @@ public class AngryToadsObstacles extends AngryToadsCharacter {
 		switch (type) {
 		/*
 		 * wood.
-		 * health is 15f.
+		 * health is 5f.
 		 */
 			case 0:
-				this.getCharacterinfo().setHealth(15f);
+				this.getCharacterinfo().setHealth(5f);
 				this.getCharacterinfo().setName("wood");
 				this.getCharacterinfo().setAppearance(this.getCharacterinfo().wood.get(0).getImage());
 				this.setCharacter(hWidth,hHeight,angle,1f,0.1f,0.7f);
@@ -63,10 +63,10 @@ public class AngryToadsObstacles extends AngryToadsCharacter {
 				break;
 		/*
 		 * ice.
-		 * health is 10f.
+		 * health is 3f.
 		 */
 			case 2:
-				this.getCharacterinfo().setHealth(10f);
+				this.getCharacterinfo().setHealth(3f);
 				this.getCharacterinfo().setName("ice");
 				this.getCharacterinfo().setAppearance(this.getCharacterinfo().ice.get(0).getImage());
 				this.setCharacter(hWidth,hHeight,angle,0.8f,0.01f,0.5f);
@@ -78,7 +78,12 @@ public class AngryToadsObstacles extends AngryToadsCharacter {
 		 * can't be destroyed.health is Float.MAX_VALUE.
 		 */
 			case 3:
-			break;
+				this.getCharacterinfo().setName("MAX");
+				this.getCharacterinfo().setAppearance(this.getCharacterinfo().translucent.getImage());
+				this.setCharacter(hWidth, hHeight, angle, 10f, 0.001f, 0.1f);
+				obs.m_userData=this.getCharacterinfo();
+				obs.createFixture(this.characterfixdef);
+				break;
 		}
 		this.getCharacterfixdef().userData = this.getCharacterinfo();
 		return obs;
