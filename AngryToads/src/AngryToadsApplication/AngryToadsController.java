@@ -89,7 +89,8 @@ public class AngryToadsController extends MouseAdapter implements Runnable, Mous
     }
 
     public void backToMenu () {
-        // TODO: 返回主菜单
+        gamethread.stop();
+        restart(false);
     }
 
 

@@ -58,17 +58,22 @@ public class AngryToadsPanelController extends ComponentAdapter implements Runna
 			mainthread = 0;
 		}
 
-		if (menuController.menuThread != null)
+		if (menuController.menuThread != null) {
 			if (menuController.stop && menuController.menuThread.isAlive() && controller.gamethread == null) {
 				mainthread = 1;
 			}
 
-		if (menuController.menuThread != null && controller.gamethread != null) {
-			if (!menuController.menuThread.isAlive() && !controller.gamethread.isAlive()) {
-				mainthread = 0;
-			}
-			if (menuController.menuThread.isAlive() && controller.gamethread.isAlive()) {
-				mainthread = 1;
+			if (controller.gamethread != null) {
+				if (!menuController.menuThread.isAlive() && !controller.gamethread.isAlive()) {
+					mainthread = 0;
+				}
+				if (menuController.menuThread.isAlive() && controller.gamethread.isAlive()) {
+					mainthread = 1;
+				}
+				if (!controller.gamethread.isAlive()) {
+					controller.gamethread = null;
+					mainthread = 0;
+				}
 			}
 		}
 
@@ -77,11 +82,11 @@ public class AngryToadsPanelController extends ComponentAdapter implements Runna
 	public void displayMenu() {
 		music.setFile("music/title_theme.wav");
 		music.start();
-
+		
 		if (menuController.menuThread == null) {
 			menuController.start();
 			layout.show(showPanel, "menu");
-		} else if (!menuController.isPainting()) {
+		} else {
 			menuController.resume();
 			layout.show(showPanel, "menu");
 		}
